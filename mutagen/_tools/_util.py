@@ -59,7 +59,6 @@ class SignalHandler(object):
     def __init__(self):
         self._interrupted = False
         self._nosig = False
-        self._init = False
 
     def init(self):
         signal.signal(signal.SIGINT, self._handler)
