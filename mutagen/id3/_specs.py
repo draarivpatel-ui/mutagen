@@ -428,9 +428,6 @@ class BinaryDataSpec(Spec):
         else:
             raise TypeError("%s has to be bytes" % self.name)
 
-        value = str(value).encode("ascii")
-        return value
-
 
 def iter_text_fixups(data, encoding):
     """Yields a series of repaired text values for decoding"""
